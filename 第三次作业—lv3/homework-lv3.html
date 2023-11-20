@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body,
+    html {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-grow: 1;
+    }
+
+    .span1 {
+        background-color: rgb(179, 179, 179);
+        width: 320px;
+        height: 500px;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+    .span2 {
+        background-color: rgb(179, 179, 179);
+        flex-basis: 320px;
+        height: 300px;
+        flex-shrink: 1;
+        flex-grow: 2;
+    }
+
+    .span3 {
+        background-color: rgb(179, 179, 179);
+        flex-basis: 320px;
+        height: 100px;
+        align-self: flex-start;
+        flex-shrink: 1;
+        flex-grow: 1;
+
+    }
+
+    .span4 {
+        background-color: rgb(179, 179, 179);
+        flex-basis: 320px;
+        height: 600px;
+        flex-shrink: 2;
+        flex-grow: 1;
+    }
+</style>
+
+<body>
+    <div class="span1">1</div>
+    <div class="span2">2</div>
+    <div class="span3">3</div>
+    <div class="span4">4</div>
+
+</body>
+
+</html>

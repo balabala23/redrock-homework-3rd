@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body,
+    html {
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .b1 {
+        width: 600px;
+        height: 400px;
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+        border-color: rgb(80, 80, 80);
+
+
+
+    }
+
+    .a1:link {
+        text-decoration: none;
+    }
+
+    .p1:after {
+        color: red;
+        content: "我的字体颜色是红色";
+    }
+
+    .d1 {
+        background-color: rgb(104, 104, 104);
+        width: 400px;
+        height: 60px;
+        font-size: larger;
+
+    }
+
+    .d1:hover {
+        background-color: rgb(255, 251, 0);
+        font-size: small;
+        transition-duration: 1s;
+        transition-delay: 0.2s;
+    }
+
+    .li1::after {
+        font-size: 20px;
+        content: "我的字体大小是40px";
+    }
+
+    .li2::after {
+        font-size: 30px;
+        content: "我的字体大小是40px";
+    }
+
+    .li3::after {
+        font-size: 40px;
+        content: "我的字体大小是40px";
+    }
+
+    .p2::after {
+        color: rgb(255, 0, 0);
+        content: "我的字体颜色是红色";
+    }
+</style>
+
+<body>
+    <div class="b1">
+        <a class="a1" href="https://www.baidu.com/">我不想要a标签默认的下划线</a>
+        <p class="p1"></p>
+        <div class="d1">鼠标悬停在我的上面时，背景变为黄色，并且字体变小</div>
+        <ul>
+            <li class="li1"></li>
+            <li class="li2"></li>
+            <li class="li3"></li>
+        </ul>
+        <p class="p2"></p>
+    </div>
+</body>
+
+</html>

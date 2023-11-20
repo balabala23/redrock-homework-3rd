@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body,
+    html {
+        background-color: rgb(240, 240, 240);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div1 {
+        text-align: center;
+        line-height: 50PX;
+        position: relative;
+        border-radius: 70px;
+        display: flex;
+        align-items: center;
+        width: 300px;
+        height: 500px;
+        background-color: rgb(225, 225, 225);
+        box-shadow:
+            inset 10px 10px 10px 0px rgb(144, 144, 144),
+            inset -20px -20px 10px 0px rgb(255, 255, 255),
+            -10px -10px 10px rgb(88, 88, 88);
+
+
+    }
+
+    .div1:hover {
+        transition-duration: 0.1s;
+        transition-delay: 0.1s;
+        transform: translateY(0px) translateX(0px);
+        box-shadow: inset 10px 10px 10px 0px rgb(144, 144, 144),
+            inset -20px -20px 10px 0px rgb(255, 255, 255),
+        ;
+
+
+    }
+
+    .div2 {
+        position: absolute;
+        right: 50%;
+        left: 100px;
+        top: 360px;
+        border-radius: 10px;
+        width: 100px;
+        height: 60px;
+        background-color: rgb(225, 225, 225), inset 10px 10px 10px 0px;
+        color: rgb(0, 0, 0);
+        border: 1px;
+        border-color: black;
+
+    }
+
+    .div2:hover {
+        transition-duration: 0s;
+        transform: translateX(2px);
+        transform: translateY(2px);
+        transform: scale(1.03);
+        height: 60px;
+        line-height: 50px;
+        background-color: rgb(227, 227, 227);
+        box-shadow:
+            inset 4px 4px 10px rgb(157, 157, 157),
+            -2px -2px 5px rgb(243, 243, 243),
+            inset -8px -8px 6px rgb(255, 255, 255);
+
+    }
+</style>
+
+<body>
+    <main>
+        <div class="div1">
+            <div class="div2">START?</div>
+        </div>
+    </main>
+</body>
+
+</html>
